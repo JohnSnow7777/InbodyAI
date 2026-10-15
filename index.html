@@ -103,6 +103,7 @@
         <a href="#connect-architecture" class="px-3 py-1.5 rounded-lg hover:bg-obsidian-800 hover:text-cyber-cyan transition">3. 독자 5-Modal & 마이파크</a>
         <a href="#github-bom" class="px-3 py-1.5 rounded-lg hover:bg-obsidian-800 hover:text-cyber-cyan transition">4. GitHub & BOM 원가</a>
         <a href="#roadmap" class="px-3 py-1.5 rounded-lg hover:bg-obsidian-800 hover:text-cyber-cyan transition">5. 4개월 개발 프로세스</a>
+        <a href="#china-oem-hack" class="px-3 py-1.5 rounded-lg bg-cyber-amber/15 text-cyber-amber border border-cyber-amber/40 hover:bg-cyber-amber hover:text-obsidian-950 transition">6. 중국 OEM & SW 개조 8법</a>
       </nav>
 
       <div class="flex items-center space-x-2">
@@ -708,6 +709,186 @@
             <div class="font-semibold text-white mt-0.5">Transition between 2019 and 2025 sarcopenia definitions by AWGS & Validation of Seated BIA against DXA.</div>
             <div class="text-slate-400 mt-0.5">DOI: 10.1186/s12877-026-07849-1 (아시아근감소증진단그룹 최신 악력·골격근량·신체수행능력 기준)</div>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CHINA OEM WHITE-LABEL SOURCING & 8 INTERNAL SW REPLACEMENT / HACKING METHODS -->
+    <section id="china-oem-hack" class="scroll-mt-20">
+      <div class="border-b border-obsidian-800 pb-4 mb-6">
+        <span class="text-xs font-mono font-bold text-cyber-amber uppercase">SECTION 06 // CHINA OEM WHITE-LABELING & 8 SW REPLACEMENT / REVERSE-ENGINEERING METHODS</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">중국산 가성비 하드웨어 소싱(`CONNECT` 로고 각인) & 내부 프로그래밍 100% 자체 개조 8대 기술</h2>
+        <p class="text-sm text-slate-400 mt-1">금형 개발비 0원, 대당 원가 39만~65만 원, 개발 기간 1~3주로 단축하는 <strong>중국 심천·광저우·허페이·정저우 7대 OEM 공장 리스트</strong>와 <strong>내부 소프트웨어를 커넥트 AI로 통째로 바꾸는 8가지 실전 엔지니어링 기법</strong>입니다.</p>
+      </div>
+
+      <!-- Part A: 7 Chinese OEM Factories & Price/SDK Table -->
+      <div class="glass-card rounded-2xl p-5 mb-6 border border-cyber-amber/30">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <h3 class="text-lg font-extrabold text-white">1. 알리바바·중국 현지 공장 즉시 발주 가능한 7대 OEM 제조사 및 SDK 개방 스펙</h3>
+          <span class="px-2.5 py-0.5 rounded bg-cyber-amber/20 text-cyber-amber font-mono text-xs font-bold">MOQ 1~10대 샘플 즉시 발주 가능</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-obsidian-900 border-b border-obsidian-700 text-slate-300 font-mono">
+                <th class="py-3 px-3">트랙 구분</th>
+                <th class="py-3 px-3">중국 OEM 제조사 (소재지)</th>
+                <th class="py-3 px-3">주력 모델명 / 형태</th>
+                <th class="py-3 px-3">FOB 단가 (원화)</th>
+                <th class="py-3 px-3">MOQ</th>
+                <th class="py-3 px-3 text-cyber-cyan">내부 프로그래밍(SW) 수정·교체 방법</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-obsidian-800 text-slate-300">
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-amber">Track A<br>(카르나 동일)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Hefei JYTOP Electronic<br><span class="text-slate-400 font-normal">(안후이성 허페이)</span></td>
+                <td class="py-2.5 px-3"><code>JYTOP QRMA 6th~10th Gen</code><br>(USB 핸드스틱 + 미니센서 보드)</td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$12 ~ $28<br>(1.7만~3.9만원)</td>
+                <td class="py-2.5 px-3 font-mono">2~10대</td>
+                <td class="py-2.5 px-3">USB-HID / <code>CH340</code> 시리얼 통신. 키오스크 내부에 보드 매립 후 외부로 금속 스틱만 노출. 로컬 <code>.mdb</code> DB 후킹 또는 <code>Electret.dll</code>/USB 패킷 스니핑으로 250종 데이터 가로채기.</td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-amber">Track A<br>(손바닥+스틱)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Guangzhou Hua Kai<br><span class="text-slate-400 font-normal">(광동성 광저우)</span></td>
+                <td class="py-2.5 px-3"><code>HK-QRMA Touch / Palm</code><br>(핸드스틱 + 발광 아크릴 손바닥 패드)</td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$18 ~ $45<br>(2.5만~6.3만원)</td>
+                <td class="py-2.5 px-3 font-mono">1~5대</td>
+                <td class="py-2.5 px-3">시니어가 손바닥만 올려놓거나 스틱 파지 시 측정. 발주 시 <strong>OEM Dongle-Free(락 해제 버전)</strong> 요청하면 암호화 동글 없이 로컬 DB/HTML 템플릿 즉시 개조 가능.</td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-amber">Track A<br>(올인원 터치)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Guangzhou Vibrant Tech / Guangyang Zhongkang</td>
+                <td class="py-2.5 px-3"><code>15.6" / 21.5" Touch All-in-One Analyzer</code> (카르나 데스크형 동일)</td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$240 ~ $390<br>(33만~54만원)</td>
+                <td class="py-2.5 px-3 font-mono">샘플 1대<br>OEM 10대</td>
+                <td class="py-2.5 px-3">내장 Windows 10/11 미니PC + 상단 카메라 + 측면 핸드스틱 일체형. 베젤 <code>CONNECT</code> 실크인쇄 지원. 윈도우 시작 쉘(Shell)을 커넥트 앱으로 덮어씌워 100% 자체 UI 구동.</td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-cyan">Track B<br>(진짜 8전극 BIA)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Shenzhen Yolanda (Qingniu) & Welland</td>
+                <td class="py-2.5 px-3"><code>Yolanda CS20M / CF577 / CF586</code><br><code>Welland FI2016B</code> (8전극 체성분)</td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$15 ~ $38<br>(2.1만~5.3만원)</td>
+                <td class="py-2.5 px-3 font-mono">샘플 1대<br>OEM 500대</td>
+                <td class="py-2.5 px-3"><strong>[강력 추천]</strong> 발판 4전극 + 듀얼핸들 4전극 다주파수 BIA(25개+ 부위별 근육·체지방·내장지방). <strong><code>QNBleApi</code> SDK 완전 개방</strong> 및 GitHub <code>oliexdev/openScale</code> 오픈소스로 1주 내 연동!</td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-cyan">Track B<br>(의료급 맥파·혈압)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Shanghai Berry Medical & Contec (콘텍)</td>
+                <td class="py-2.5 px-3"><code>Berry BM1000C</code> (PPG/SpO2)<br><code>CONTEC08A-BT</code> (혈압) / <code>PM10</code> (ECG)</td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$12 ~ $45<br>(1.7만~6.2만원)</td>
+                <td class="py-2.5 px-3 font-mono">1~10대</td>
+                <td class="py-2.5 px-3">FDA/CE 인증 바이탈 모듈. GitHub에 공개된 표준 5바이트 <code>zh2x/BCI_Protocol</code> 및 BLE GATT 표준(<code>0x1810</code>)으로 파이썬 10줄 코드만으로 실시간 100Hz 맥파 파형·혈압 수신.</td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-cyan">Track B<br>(약국 스테이션)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Zhengzhou Shanghe (`상허`) / Sonka / Konsung</td>
+                <td class="py-2.5 px-3"><code>Shanghe SH-300G / SH-V9</code><br><code>Sonka SK-X80</code> / <code>Konsung HES-5</code></td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$500 ~ $1,500<br>(70만~210만원)</td>
+                <td class="py-2.5 px-3 font-mono">1대</td>
+                <td class="py-2.5 px-3">신장·체중·8전극 BIA·오므론 호환 자동혈압·SpO2·체온·프린터 일체형. <strong>RS232 Hex/ASCII 명세서 및 Android SDK 기본 제공</strong>으로 내장 APK를 커넥트 앱으로 통째 교체 가능.</td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">Track C<br>(DIY 오픈 미러)</td>
+                <td class="py-2.5 px-3 font-bold text-white">Shenzhen Vercon / Sosu Kiosk OEM</td>
+                <td class="py-2.5 px-3"><code>21.5"~32" RK3588 / N100 터치 스마트미러·키오스크</code> (카메라+80mm 프린터 내장)</td>
+                <td class="py-2.5 px-3 font-mono font-bold text-cyber-mint">$200 ~ $420<br>(28만~58만원)</td>
+                <td class="py-2.5 px-3 font-mono">1~5대</td>
+                <td class="py-2.5 px-3"><strong>[가성비·자유도 1위]</strong> 루팅된 순정 Android/Windows 상태로 출고. 전면 <code>CONNECT</code> 로고 인쇄 후 <strong>QRMA 스틱($15) + Yolanda 8전극 BIA($20) + 악력계($15)</strong>만 USB로 꽂으면 끝!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Part B: 8 Practical Engineering Methods to Replace/Hack Internal Software -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-cyan">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-cyan font-bold">기법 01 // 1~3일 완성</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-mint/15 text-cyber-mint">난이도: 하</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">OS 런처/쉘 완전 덮어쓰기 (Shell Hijacking)</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            중국 올인원 키오스크의 Windows 레지스트리(<code>Winlogon\Shell</code>)를 <code>explorer.exe</code>에서 <code>ConnectAI.exe</code>로 변경하거나, Android 보드(<code>adb root</code>)에서 중국 기본 APK를 비활성화하고 커넥트 APK를 홈 런처(<code>Kiosk Lock</code>)로 고정합니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-cyan">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-cyan font-bold">기법 02 // 3~5일 완성</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-cyan/15 text-cyber-cyan">난이도: 중</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">USB-HID / RS232 패킷 스니핑 (Wireshark)</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            제조사가 SDK를 안 줘도 <code>USBPcap + Wireshark</code> 또는 <code>Serial Port Monitor</code>로 핸드스틱의 8~24바이트 Hex 프레임(<code>0xAA 0x55...</code>)을 1일 만에 해독하여 중국 SW를 지우고 Python(<code>pyserial</code>)이나 크롬 <code>WebSerial API</code>에 직결합니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-amber">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-amber font-bold">기법 03 // 1~2주 완성</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-mint/15 text-cyber-mint">난이도: 하~중</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">중국 분석기 로컬 DB(<code>.mdb</code>) & HTML 후킹</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            $15짜리 중국 QRMA 프로그램이 측정 직후 로컬 <code>Data.mdb</code>(Access/SQLite)에 250개 수치를 쓰는 순간, 파이썬 <code>watchdog</code> 데몬이 0.1초 만에 값을 가로채어 카메라 rPPG·3D 체형 점수와 합친 뒤 커넥트 LLM 리포트로 출력합니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-mint">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-mint font-bold">기법 04 // 1~2주 완성</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-mint/15 text-cyber-mint">난이도: 하</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">GitHub 기구현 파서(<code>openScale</code>/<code>BCI</code>) 결합</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            역공학조차 필요 없이 GitHub <a href="https://github.com/oliexdev/openScale" target="_blank" class="text-cyber-cyan underline">oliexdev/openScale</a> 및 <a href="https://github.com/zh2x/BCI_Protocol" target="_blank" class="text-cyber-cyan underline">zh2x/BCI_Protocol</a>에 이미 파서가 공개된 Yolanda 8전극 체성분($20) + Berry 맥파($15) 모듈을 그대로 가져다 씁니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-mint">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-mint font-bold">기법 05 // 원가 39~59만원</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-mint/15 text-cyber-mint">양산 1순위</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">알리바바 범용 키오스크($250) + 센서 SKD 조립</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            비싼 완성형 헬스 키오스크 대신 심천 공장에서 <strong>카메라+80mm 프린터 내장 범용 터치 키오스크($220~$320, CONNECT 로고 인쇄 및 측면 홀 타공)</strong>만 수입해 국내에서 USB 핸드스틱·8전극 발판·악력계를 결합합니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-purple">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-purple font-bold">기법 06 // 3~5일 완성</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-mint/15 text-cyber-mint">난이도: 하</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">UI 자동화(<code>pywinauto</code>) & 가상 프린터 래핑</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            프로토콜이 완전히 잠긴 기기라도 중국 프로그램을 화면 밖(<code>x=-2000</code>)에 숨겨 두고, 파이썬 <code>pywinauto</code>가 대신 시작 버튼을 누른 뒤 결과 리스트뷰 텍스트나 가상 프린터(<code>RedMon</code>) 출력 스트림만 빼내어 커넥트 UI에 보여줍니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-amber">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-amber font-bold">기법 07 // 금형비 0원</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-cyan/15 text-cyber-cyan">난이도: 중</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">중국 기구물($20) + 커넥트 <code>ESP32/AD5940</code> 뇌 이식</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            중국산 고급 스테인리스 핸드스틱/발판($15~$30) 케이스를 드라이버로 열어 중국산 저가 보드만 버리고, 그 자리에 커넥트가 설계한 <strong><code>ESP32-S3 + AD5940(위상각) + MAX86150(ECG/PPG)</code> 보드($35)</strong>를 이식해 금형비 수천만 원을 아낍니다.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 border-l-4 border-l-cyber-crimson">
+          <div class="flex justify-between items-center font-mono text-xs">
+            <span class="text-cyber-crimson font-bold">기법 08 // 2주·120만원</span>
+            <span class="px-2 py-0.5 rounded bg-cyber-amber/20 text-cyber-amber">필수 치트키</span>
+          </div>
+          <h4 class="text-sm font-extrabold text-white mt-1.5">KC 인증 90% 감면 & 합법적 '제조원: (주)커넥트'</h4>
+          <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+            <strong>국내 KC 인증된 외장 DC 12V/24V 어댑터</strong> 사용(전기안전인증 면제) + <strong>유선 USB 센서 연결</strong>(무선 RF 인증 면제)로 <strong>비의도적 전자파 시험(120만원/2주)</strong>만 통과하고, SKD 부분품 수입 후 국내 조립·검수로 합법적 국산 제조원 명판을 부착합니다.
+          </p>
         </div>
       </div>
     </section>
