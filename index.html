@@ -104,6 +104,7 @@
         <a href="#github-bom" class="px-3 py-1.5 rounded-lg hover:bg-obsidian-800 hover:text-cyber-cyan transition">4. GitHub & BOM 원가</a>
         <a href="#roadmap" class="px-3 py-1.5 rounded-lg hover:bg-obsidian-800 hover:text-cyber-cyan transition">5. 4개월 개발 프로세스</a>
         <a href="#china-oem-hack" class="px-3 py-1.5 rounded-lg bg-cyber-amber/15 text-cyber-amber border border-cyber-amber/40 hover:bg-cyber-amber hover:text-obsidian-950 transition">6. 중국 OEM & SW 개조 8법</a>
+        <a href="#product-visuals" class="px-3 py-1.5 rounded-lg bg-cyber-mint/20 text-cyber-mint border border-cyber-mint/50 hover:bg-cyber-mint hover:text-obsidian-950 transition font-extrabold">★ 실사 외형 & 30초 동작</a>
       </nav>
 
       <div class="flex items-center space-x-2">
@@ -1353,6 +1354,120 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 09: Photorealistic Product Visuals & 30-Second UX Action Guide -->
+    <section id="product-visuals" class="space-y-6 pt-4">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-obsidian-700 pb-4">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-cyber-mint">SECTION 09 // REAL HARDWARE ANATOMY & 30-SECOND USER FLOW (ZERO SCI-FI HALLUCINATION)</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">9. 최종 제품 실사 외형 & 터치모니터 앞 30초 측정 동작 가이드</h2>
+        </div>
+        <p class="text-xs text-slate-400 max-w-md">
+          "인바디처럼 생긴 건가? 터치모니터 앞에 서서 뭘 하는 건가?" — 실제 소싱 부품(<code class="text-cyber-cyan">Shenzhen Vercon 21.5"</code> + <code class="text-cyber-mint">Yolanda 8전극</code> + <code class="text-cyber-amber">Camry 악력</code> + <code class="text-white">MAX86150</code>)을 그대로 조립한 100% 실사 외형입니다.
+        </p>
+      </div>
+
+      <!-- 2-Column Product Visual Comparison: Phase 2 Commercial Kiosk vs Phase 1 24만원 Benchtop -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Card 1: Phase 2 Commercial Stand Kiosk (63.8만원) -->
+        <div class="glass-card rounded-2xl p-5 border border-cyber-cyan/40 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded bg-cyber-cyan/20 text-cyber-cyan font-mono text-xs font-extrabold">PHASE 2 상용 완제품 (63.8만원 / 대)</span>
+              <span class="text-xs font-mono text-slate-400">약국 · 마이파크 매장 설치형</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-white">① 21.5인치 스탠드형 올인원 키오스크 + 하단 4전극 발판 + 양손 멀티센서 핸드스틱</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              상단은 무인카페 주문기처럼 세련된 <strong>21.5인치 세로형 터치모니터(상단 60fps 카메라 + 하단 80mm 영수증 프린터 내장)</strong>이고, 허리 높이 양옆에는 <strong>인바디 손잡이 + 악력 레버 + 엄지 광학센서(MAX86150)가 합쳐진 스테인리스 핸드스틱 2개</strong>가 걸려 있으며, 바닥에는 <strong>강화유리 4전극 체성분 발판</strong>이 연결된 하이브리드 외형입니다.
+            </p>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-obsidian-700 bg-obsidian-950">
+            <img src="assets/connect_inbody_kiosk_full.jpg" alt="CONNECT InBody AI Phase 2 상용 스탠드 키오스크 실사 외형" class="w-full h-[460px] object-cover object-center" />
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-300 bg-obsidian-900/90 p-3 rounded-xl border border-obsidian-800">
+            <div>• <strong class="text-cyber-cyan">상단 베젤(145cm):</strong> OV2710 60fps 안면·체형 카메라</div>
+            <div>• <strong class="text-cyber-cyan">중앙 화면:</strong> 21.5" 정전식 터치스크린 (다크모드 UI)</div>
+            <div>• <strong class="text-cyber-mint">화면 아래(95cm):</strong> 80mm 자동커팅 영수증 토출구</div>
+            <div>• <strong class="text-cyber-amber">양옆 & 바닥:</strong> 8전극 핸드스틱(악력·광학 내장) + 4전극 발판</div>
+          </div>
+        </div>
+
+        <!-- Card 2: Phase 1 Office Benchtop Prototype (24.4만원) -->
+        <div class="glass-card rounded-2xl p-5 border border-cyber-mint/40 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded bg-cyber-mint/20 text-cyber-mint font-mono text-xs font-extrabold">PHASE 1 사무실 벤치탑 1호기 (24.4만원)</span>
+              <span class="text-xs font-mono text-slate-400">14일 내 즉시 조립 · 검증용</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-white">② 철제 케이스 없이 사무실 책상 위에서 32개 지표를 100% 똑같이 뽑아내는 1호기</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              처음부터 85만원짜리 철제 키오스크를 살 필요 없이, 사무실의 <strong>기존 24인치 모니터 위에 60fps 웹캠</strong>을 얹고, 책상 왼쪽에 <strong>투명 아크릴 센서 허브 박스(ESP32-S3 + AD5940 + HX711 + ADuM3160 절연 동글)</strong>를 놓은 뒤, <strong>스테인리스 손잡이·개조된 Camry 악력계·책상 아래 4전극 발판</strong>을 연결한 실제 모습입니다.
+            </p>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-obsidian-700 bg-obsidian-950">
+            <img src="assets/connect_inbody_phase1_benchtop.jpg" alt="CONNECT InBody AI Phase 1 24만원 벤치탑 1호기 실사 외형" class="w-full h-[460px] object-cover object-center" />
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-300 bg-obsidian-900/90 p-3 rounded-xl border border-obsidian-800">
+            <div>• <strong class="text-cyber-mint">투명 아크릴 박스:</strong> ESP32-S3 + AD5940 + HX711 내장</div>
+            <div>• <strong class="text-cyber-mint">USB 절연 동글:</strong> ADuM3160 (2500V 의료급 안전 격리)</div>
+            <div>• <strong class="text-cyber-amber">책상 위 핸들:</strong> 스테인리스 4전극 바 + Camry 악력/MAX86150</div>
+            <div>• <strong class="text-cyber-cyan">책상 아래 바닥:</strong> Yolanda 4전극 강화유리 발판 연결</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Width 30-Second User Experience Walkthrough (3-Step Visual Guide) -->
+      <div class="glass-card rounded-2xl p-6 border border-cyber-amber/40 space-y-5">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <span class="text-xs font-mono font-bold text-cyber-amber uppercase">30-SECOND USER ACTION SCENARIO // 터치모니터 앞에서 고객이 실제로 하는 3단계 동작</span>
+            <h3 class="text-xl font-extrabold text-white mt-0.5">③ "터치모니터 앞에 서서 30초 동안 무엇을 하나요?" — 화면 안내에 따라 딱 3가지만 하면 끝납니다</h3>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-cyber-amber/15 border border-cyber-amber/40 text-cyber-amber font-mono text-xs font-bold">총 소요시간: 30초 → 80mm 영수증 즉시 출력</span>
+        </div>
+
+        <div class="rounded-xl overflow-hidden border border-obsidian-700 bg-obsidian-950">
+          <img src="assets/connect_inbody_30sec_ux_guide.jpg" alt="터치모니터 앞 30초 측정 3단계 고객 행동 가이드" class="w-full max-h-[480px] object-cover object-center" />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 rounded-xl bg-obsidian-900/95 border border-cyber-cyan/30 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-cyber-cyan/20 text-cyber-cyan font-mono font-extrabold">STEP 1 (0 ~ 15초)</span>
+              <span class="font-mono text-slate-400">23개 바이오마커 동시 수집</span>
+            </div>
+            <div class="font-extrabold text-white text-sm">발판 올라서기 & 양손 핸들 잡고 화면 응시</div>
+            <p class="text-slate-300 leading-relaxed">
+              바닥 <strong>4전극 발판</strong>에 맨발로 올라서서 양옆의 <strong>스테인리스 핸드스틱</strong>을 쥐고, 오른손 엄지를 <strong>빨간색 광학센서 창(MAX86150)</strong>에 올린 채 정면 카메라를 15초간 바라봅니다.<br>
+              <span class="text-cyber-cyan font-semibold">→ 체성분 위상각(10종) + 심전도·무커프 혈압·HRV(10종) + 안면 혈류·홍채(3종) 자동 측정 완료</span>
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-obsidian-900/95 border border-cyber-amber/30 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-cyber-amber/20 text-cyber-amber font-mono font-extrabold">STEP 2 (15 ~ 20초)</span>
+              <span class="font-mono text-slate-400">4개 신경근 지표 수집</span>
+            </div>
+            <div class="font-extrabold text-white text-sm">신호음에 맞춰 오른손 악력 레버 3초간 '꽉!' 쥐기</div>
+            <p class="text-slate-300 leading-relaxed">
+              화면에서 <em>"오른손 손잡이를 3초간 힘껏 쥐세요!"</em> 안내가 나오면 오른손 일체형 악력 레버를 최대로 움켜쥡니다. 화면 게이지가 <code class="text-cyber-amber font-bold">38.4 kg</code>처럼 실시간으로 올라갑니다.<br>
+              <span class="text-cyber-amber font-semibold">→ 최대 악력(근감소증 기준) + 0.2초 폭발적 순발력(RFD) + 지구력 + 상대 악력 측정 완료</span>
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-obsidian-900/95 border border-cyber-mint/30 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 rounded bg-cyber-mint/20 text-cyber-mint font-mono font-extrabold">STEP 3 (20 ~ 30초)</span>
+              <span class="font-mono text-slate-400">5개 3D 체형·균형 & 영수증 출력</span>
+            </div>
+            <div class="font-extrabold text-white text-sm">1m 뒤로 물러서서 만세·회전 후 80mm 영수증 수령</div>
+            <p class="text-slate-300 leading-relaxed">
+              손잡이를 걸어두고 바닥 발자국 마커(1m 뒤)에 서서 <strong>양팔 위로 들기(오십견 ROM) → 몸통 회전(파크골프 스윙축) → 외발서기(낙상 균형)</strong>를 수행하면, 모니터 아래에서 <strong>80mm 종이 리포트 영수증</strong>이 자동 출력됩니다.
+            </p>
+          </div>
         </div>
       </div>
     </section>
