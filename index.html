@@ -899,6 +899,74 @@
           </p>
         </div>
       </div>
+
+      <!-- Part C: 1 Unit vs 2~3 Units vs 5 Units PoC/Pilot Real Cost Breakdown (Including Shipping) & Timeline -->
+      <div class="glass-card rounded-2xl p-5 mt-6 border border-cyber-mint/40">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <span class="text-xs font-mono font-bold text-cyber-mint uppercase">PILOT & POC BUDGET CALCULATOR // 1 UNIT VS 3 UNITS VS 5 UNITS (SHIPPING INCLUDED)</span>
+            <h3 class="text-lg font-extrabold text-white mt-0.5">3. 양산 전 가능성 검증용 소량 제작(1대 · 3대 · 5대) 실비 견적표 (항공·해운 배송비 + 통관비 100% 포함 & 개발 기간)</h3>
+          </div>
+          <span class="px-2.5 py-1 rounded bg-cyber-mint/20 text-cyber-mint font-mono text-xs font-bold">1대 초가성비 PoC: 24만원 (2주 완성) · 5대 파일럿: 대당 63.8만원 (4주 완성)</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-obsidian-900 border-b border-obsidian-700 text-slate-300 font-mono">
+                <th class="py-3 px-3">비용 항목 (배송비·관부가세 포함)</th>
+                <th class="py-3 px-3 text-cyber-cyan">① [Track 0: 1대 초저비용 PoC]<br>벤치탑 1호기 (보유 PC/모니터 활용)</th>
+                <th class="py-3 px-3 text-white">② [Track 1: 풀키오스크 1대]<br>중국 21.5" 키오스크 완전체 1대</th>
+                <th class="py-3 px-3 text-cyber-amber">③ [Track 2: 파일럿 3대]<br>약국 1곳 + 마이파크 2곳 실증</th>
+                <th class="py-3 px-3 text-cyber-mint">④ [Track 3: 파일럿 5대 ★최적]<br>JLCPCB 5장 MOQ 100% 활용</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-obsidian-800 text-slate-300">
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-bold text-white">A. 21.5" 터치 키오스크 함체 + N100 미니PC + 80mm 프린터</td>
+                <td class="py-2.5 px-3 font-mono text-cyber-cyan">0원 (사무실 PC/모니터 활용)<br><span class="text-slate-400">※ 신품 터치모니터+프린터 구매시 +27만원</span></td>
+                <td class="py-2.5 px-3 font-mono">$330 (약 46.2만원)<br><span class="text-slate-400">심천 Vercon 1대 샘플가</span></td>
+                <td class="py-2.5 px-3 font-mono">$930 (약 130.2만원)<br><span class="text-slate-400">$310 × 3대 (CONNECT 로고 인쇄)</span></td>
+                <td class="py-2.5 px-3 font-mono">$1,475 (약 206.5만원)<br><span class="text-slate-400">$295 × 5대 (CONNECT 로고 인쇄)</span></td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-bold text-white">B. 8전극 핸드스틱·발판(Yolanda) + 악력계(Camry) + 60fps 카메라</td>
+                <td class="py-2.5 px-3 font-mono">$58 (약 8.1만원)<br><span class="text-slate-400">Yolanda $25 + Camry $8 + 카메라 $25</span></td>
+                <td class="py-2.5 px-3 font-mono">$58 (약 8.1만원)<br><span class="text-slate-400">1대분 동일</span></td>
+                <td class="py-2.5 px-3 font-mono">$165 (약 23.1만원)<br><span class="text-slate-400">$55 × 3세트</span></td>
+                <td class="py-2.5 px-3 font-mono">$260 (약 36.4만원)<br><span class="text-slate-400">$52 × 5세트</span></td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-bold text-white">C. <code>ESP32-S3 + AD5940 + MAX86150 + HX711 + ADuM3160</code> 보드</td>
+                <td class="py-2.5 px-3 font-mono text-cyber-cyan">$62 (약 8.7만원)<br><span class="text-slate-400">기성 브레이크아웃 모듈 1세트 직결</span></td>
+                <td class="py-2.5 px-3 font-mono">$105 (약 14.7만원)<br><span class="text-slate-400">JLCPCB 최소수량 2장 (1장 예비)</span></td>
+                <td class="py-2.5 px-3 font-mono">$155 (약 21.7만원)<br><span class="text-slate-400">JLCPCB 5장 발주 (2장 예비)</span></td>
+                <td class="py-2.5 px-3 font-mono text-cyber-mint">$155 (약 21.7만원)<br><span class="text-slate-400">JLCPCB 5장 전량 장착 (장당 4.3만원!)</span></td>
+              </tr>
+              <tr class="hover:bg-obsidian-850/60">
+                <td class="py-2.5 px-3 font-bold text-white">D. 국제 배송비 (DHL 항공 + 인천 해운 LCL) & 통관/부자재</td>
+                <td class="py-2.5 px-3 font-mono">$38 항공특송 + 부자재<br>(약 7.2만원 / 4일 도착)</td>
+                <td class="py-2.5 px-3 font-mono">보드 DHL $24 + 해운 LCL $71<br>+ 부자재 (약 16.0만원 / 5일 도착)</td>
+                <td class="py-2.5 px-3 font-mono">보드 DHL $24 + 해운 1CBM $191<br>+ 부자재 (약 37.0만원)</td>
+                <td class="py-2.5 px-3 font-mono">보드 DHL $24 + 해운 1.4CBM $286<br>+ 부자재 (약 54.4만원)</td>
+              </tr>
+              <tr class="bg-obsidian-900/90 font-extrabold text-sm">
+                <td class="py-3 px-3 text-white">★ 총 투입 비용 합계 (1대당 평균 단가)</td>
+                <td class="py-3 px-3 font-mono text-cyber-cyan">총 24만원 (신품 모니터시 51만원)<br><span class="text-xs">대당 24만원</span></td>
+                <td class="py-3 px-3 font-mono text-white">총 85만원<br><span class="text-xs text-slate-400">대당 85만원 (예비보드 1장 포함)</span></td>
+                <td class="py-3 px-3 font-mono text-cyber-amber">3대 총 212만원<br><span class="text-xs">대당 70.6만원 (예비보드 2장 포함)</span></td>
+                <td class="py-3 px-3 font-mono text-cyber-mint">5대 총 319만원<br><span class="text-xs">대당 63.8만원 (최적 가성비!)</span></td>
+              </tr>
+              <tr class="bg-obsidian-950 font-mono text-xs">
+                <td class="py-2.5 px-3 font-bold text-slate-300">★ 총 개발 및 제작 소요 기간 (발주~작동 완료)</td>
+                <td class="py-2.5 px-3 text-cyber-cyan font-bold">딱 2주 (14일 완성)</td>
+                <td class="py-2.5 px-3 text-white font-bold">3주 (21일 완성)</td>
+                <td class="py-2.5 px-3 text-cyber-amber font-bold">3.5주 (25일 완성)</td>
+                <td class="py-2.5 px-3 text-cyber-mint font-bold">4주 (28일 완성)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
   </main>
